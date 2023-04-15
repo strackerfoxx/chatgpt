@@ -1,0 +1,240 @@
+:root {
+    --azul: #3b82f6;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.body{
+    height: 95vh;
+    width: 97vw;
+    margin: 1% auto;
+    border-radius: 1rem;
+    background-color: rgb(38, 38, 38);
+    background-image: url("./img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+.body h3{
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    margin: 0 1rem;
+}
+nav h2{
+    cursor: pointer;
+}
+.progress{
+    margin: 0 1rem;
+    background-color: rgba(255, 255, 255, 0.281);
+    width: 2px;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress a{
+    background-color: rgba(255, 255, 255, 0.359);
+    width: 10px;
+    height: 10px;
+    margin: 5rem 0;
+    border-radius: 100%;
+    transition: ease-out 300ms;
+    color: transparent;
+}
+.progress a:hover{
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    padding: .5rem;
+    transition: ease-out 300ms;
+}
+.content{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.container h1{
+    font-size: 10rem;
+    font-weight: bold;
+    display: block;
+}
+.container p{
+    display: block;
+    color: #d4d4d4;
+}
+.explore{
+    padding: 1.8rem;
+    border-radius: 1rem;
+    width: 17rem;
+    background-color: #3b82f6;
+    border: 0;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botonera{
+    display: flex;
+    justify-content: center;
+}
+.botonera a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.359);
+    text-align: center;
+    padding: .5rem;
+    margin: 0 1rem;
+}
+.prev{
+    background-color: rgba(128, 128, 128, 0.205);
+    width: 30vw;
+    height: 50vh;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.136);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .prev{
+        display: none;
+    }
+}
+.prev div{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #e1e1e1;
+}
+.imgchat{
+    background-image: url("https://images.pexels.com/photos/5997313/pexels-photo-5997313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    filter: saturate(10%);
+    transition: ease-in-out 300ms;
+}
+.imgchat:hover{
+    filter: saturate(100%);
+    transition: ease-in-out 300ms;
+}
+.imgabout{
+    background-image: url("https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    transition: ease-in-out 300ms;
+    filter: saturate(10%);
+}
+.imgabout:hover{
+    filter: saturate(100%);
+    transition: ease-in-out 300ms;
+}
+.imgstart{
+    background-image: url("./img/inicio.png");
+    background-size: cover;
+    transition: ease-in-out 300ms;
+    filter: saturate(10%);
+}
+.imgstart:hover{
+    filter: saturate(100%);
+    transition: ease-in-out 300ms;
+}
+.chat{
+    background-color: #122b53;
+    width: 80vw;
+    height: 75vh;
+    overflow-y: scroll;
+}
+.chat p{
+    padding: 3rem;
+    margin: 0;
+}
+.user{
+    background-color: #2e3e58;
+}
+.bot{
+    background-color: #162337;
+}
+.input{
+    display: flex;
+    width: 80vw;
+}
+
+@media (min-width: 768px) {
+    .chat{
+        width: 90vw;
+    }
+    .input{
+        width: 90vw;
+    }
+}
+.input input{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    background-color: #344f79;
+    color: white;
+}
+.input button{
+    background-color: #2e3e58;
+    border: none;
+    padding: 1rem;
+}
+.icon{
+    width: 2rem;
+}
+.about{
+    display: flex;
+}
+.about img{
+    height: 10vh;
+}
