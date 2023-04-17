@@ -5,7 +5,7 @@ import Section2 from './Section2'
 import Section3 from './Section3'
 
 export default function Body() {
-    const [step, setStep] = useState(2)
+    const [step, setStep] = useState(1)
   return (
     <div className='body'>
         <nav>

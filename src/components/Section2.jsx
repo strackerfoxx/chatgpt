@@ -52,7 +52,7 @@ export default function Section2() {
     <div>
         <div className='chat' id='message-container'>
             {chat.map(message => (
-                <p className={`${message.id === 1 ? "user" : "bot"}`} key={randomString(8)}>{message.data}</p>
+                <p className={`${message.id === 1 ? "user" : "bot"}`} key={randomString(8)}>{`${message.id === 1 ? "User:" : "Bot:"} ${message.data}`}</p>
             ))}
             {isLoading && (
                 <p className="bot">
