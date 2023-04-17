@@ -9,19 +9,19 @@ export default function Body() {
   return (
     <div className='body'>
         <nav>
-            <h2 onClick={() => setStep(1)}>ChatGPT</h2>
+            <h2 onClick={() => setStep(1)}> ChatGPT</h2>
             <div>
-                <a href="#">About</a>
+                <a href="#" onClick={() => setStep(3)}>About</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
             </div>
             <h3>Hello, Alex!</h3>
         </nav>
         <div className='content'>
-            <Bar setStep={setStep} />
+            <Bar setStep={setStep} step={step}  />
             <div  className='container'>
                 {step === 1 ? (
-                    <Section1/>
+                    <Section1 setStep={setStep}/>
                     ): step === 2 ? (
                     <Section2/>
                     ): (
